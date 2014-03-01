@@ -14,6 +14,12 @@
             }
 
             require_once $pref . 'config/config-local.php';
+            if ( file_exists( $pref . 'config/config-local.php' ) ) {
+                require_once $pref . 'config/config-local.php';
+            }
+            else {
+                require_once $pref . 'config/config.php';
+            }
             require_once $pref . 'models/database.php';
             require_once $pref . 'models/db.php';
 
