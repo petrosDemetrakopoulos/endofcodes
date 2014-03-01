@@ -35,6 +35,7 @@
         } 
         
         public static function run( $sql ) {
+            echo $sql . "\n";
             try {
                 self::migrate( $sql );
             }
