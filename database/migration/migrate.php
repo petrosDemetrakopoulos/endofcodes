@@ -13,7 +13,6 @@
                 $pref = "../../";
             }
 
-            require_once $pref . 'config/config-local.php';
             if ( file_exists( $pref . 'config/config-local.php' ) ) {
                 require_once $pref . 'config/config-local.php';
             }
